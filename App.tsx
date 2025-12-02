@@ -6,7 +6,8 @@ import { ConnectionState, Persona } from './types';
 import { Power, Mic, MicOff, AlertCircle, Settings, X } from 'lucide-react';
 
 const App: React.FC = () => {
-  const [apiKey] = useState(process.env.API_KEY || '');
+  // Tırnak işaretlerini sakın unutma!
+  const [apiKey] = useState("AIzaSyAIcnOr7Dg67eEbHYce7PoSDlgfDup00YU");
   const [connectionState, setConnectionState] = useState<ConnectionState>(ConnectionState.DISCONNECTED);
   
   // Default Turkish Persona
