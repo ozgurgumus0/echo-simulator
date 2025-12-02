@@ -18,7 +18,11 @@ export class GeminiLiveService {
   public onError: (error: string) => void = () => {};
 
   constructor(apiKey: string) {
-    this.ai = new GoogleGenAI({ apiKey });
+    // Buraya kendi AIza ile başlayan uzun şifreni tırnak içine yapıştır:
+    const mySecretKey = "AIzaSyAIcnOr7Dg67eEbHYce7PoSDlgfDup00YU"; 
+    
+    // Artık dışarıdan gelen apiKey'i değil, senin hardcoded şifreni kullanacak
+    this.ai = new GoogleGenAI({ apiKey: mySecretKey });
   }
 
   async connect(systemInstruction: string, voiceName: string = 'Kore') {
