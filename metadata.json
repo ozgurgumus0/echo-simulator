@@ -1,0 +1,7 @@
+{
+  "name": "Kişiselleştirilmiş Echo Simülatörü",
+  "description": "Gemini Live API tarafından desteklenen sanal bir Amazon Echo cihazı. Kendi kişiselleştirilmiş LLM kişiliğinizi yapılandırın ve doğal sesli konuşmalar kullanarak onunla etkileşime geçin.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
